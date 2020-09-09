@@ -48,8 +48,11 @@ public class CustomerList {
     public Customer[] getAllCustomers(){
         Customer[] showCustomer = new Customer[total];
         int i = 0;
-        for (Customer user: showCustomer){
-            showCustomer[i++] = customers[i];
+        for (Customer user: customers){
+            if (user != null)
+                showCustomer[i++] = user;
+            else
+                break;
         }
         return showCustomer;
     }
