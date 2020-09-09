@@ -1,4 +1,4 @@
-package edu.unsw.project1;
+package edu.unsw.CustomerSystem;
 
 public class Customer {
     /*
@@ -14,7 +14,16 @@ public class Customer {
     private String phone;
     private String email;
 
+    public Customer(String name, char gender, int age, String phone, String email) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.phone = phone;
+        this.email = email;
+    }
+
     public String getName() {
+
         return name;
     }
 
